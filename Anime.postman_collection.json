@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "e7facb44-7114-4131-88b0-7b88cde0e90d",
+		"name": "Anime",
+		"description": "Prueba de Consolidación Módulo 6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39404037"
+	},
+	"item": [
+		{
+			"name": "ListarAnime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/animes"
+			},
+			"response": []
+		},
+		{
+			"name": "ListarIdOrName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/animes/id-nombre?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animes",
+						"id-nombre"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearAnime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"\",\r\n    \"genero\": \"\",\r\n    \"año\": \"\" ,\r\n    \"autor\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/animes"
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarAnime",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/animes"
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarAnime",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/animes?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animes"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

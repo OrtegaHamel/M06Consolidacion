@@ -1,0 +1,19 @@
+{
+  "name": "m06consolidacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "test": "npx mocha test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.8.2"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
